@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\course_work_kpi_test.props" />
+</Project>

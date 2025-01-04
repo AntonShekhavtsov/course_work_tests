@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Звіт";
+}
+
+@model List<DocumentCheckResult>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Section</th>
+            <th>Message</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var result in Model)
+        {
+            <tr>
+                <td>@result.SectionName</td>
+                <td>@result.Message</td>
+                <td>@result.Status</td>
+            </tr>
+        }
+    </tbody>
+</table>
